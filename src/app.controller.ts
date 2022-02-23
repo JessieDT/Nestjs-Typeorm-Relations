@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   async getHello(): Promise<any> {
-    await this.appService.seed();
-    return 'Seed complete';
+    // await this.appService.seed();
+    return this.appService.getEmployeeById(1);
   }
 }

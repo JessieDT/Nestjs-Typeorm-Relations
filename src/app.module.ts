@@ -12,9 +12,9 @@ import { Task } from './task.entity';
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: '../db',
-      entities: ['dist/src/**/*.entity.js'],
+      entities: ['dist/**/*.entity.js'],
       synchronize: true,
-      logging: true
+      logging: false
   }),
     TypeOrmModule.forFeature([Employee, ContactInfo, Meeting, Task])
   ],
